@@ -1,0 +1,143 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* Inicio Estructura Menu */
+#wpbody-content {
+  padding: 20px;
+}
+#wpbody-content .nav-tabs .nav-item.show .nav-link,
+#wpbody-content .nav-tabs .nav-link.active {
+  background-color: #28a745;
+  color: #fff;
+}
+#wpbody-content .nav-tabs .nav-link {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* Agrega un borde alrededor de cada opción del menú */
+  padding: 10px; /* Espaciado interno para mayor claridad */
+}
+#wpbody-content .nav-tabs {
+  border: 1px solid #ccc; /* Agrega un borde alrededor de todo el elemento <ul> */
+  border-radius: 5px;
+}
+#wpbody-content .nav-tabs .nav-link i {
+  margin-left: auto; /* Alinea el ícono a la derecha */
+}
+#wpbody-content .tab-content {
+  border: 1px solid #ccc; /* Agrega un borde alrededor de cada tab content */
+  padding: 20px; /* Espaciado interno para mayor claridad */
+  border-radius: 5px;
+}
+/* Fin Estructura Menu */
+
+/* Inicio notice resena */
+.zeleri-notice {
+  display: flex;
+}
+.zeleri-notice .zeleri-review-text {
+  max-width: 65%;
+}
+.zeleri-notice .img-logo-zeleri img {
+  margin: 20px;
+}
+.zeleri-notice .zeleri-review-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.zeleri-notice .zeleri-button-primary {
+  margin-left: auto;
+  height: 20px;
+  margin-top: 25px;
+}
+.button.zeleri-button-primary {
+  background: #28a745;
+  border-color: #28a745;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+/* Final notice resena */
+
+/*Inicio home plugin*/
+ul {
+  list-style: none; /* Elimina las viñetas */
+}
+
+.tab-content i {
+  margin-right: 0.5rem; /* Espacio entre ícono y texto */
+  font-size: 52px;
+}
+
+.xs {
+  font-size: 16px;
+  color: gray;
+}
+
+.zeleri-verificacion-plugin li {
+  margin-bottom: 50px;
+}
+
+.zeleri-verificacion-plugin .col {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.zeleri-verificacion-plugin .col p {
+  margin: 0px;
+}
+
+.zeleri-verificacion-plugin .col a {
+  margin-left: auto;
+}
+
+.zeleri-verificacion-plugin .row,
+.zeleri-row-header {
+  border-bottom: 1px solid #6c757d;
+  margin-bottom: 40px;
+}
+
+.zeleri-header-verification-plugin {
+  padding-left: 5%;
+  margin-bottom: 50px;
+}
+
+.zeleri-header-verification-plugin p,
+.zeleri-verificacion-plugin p {
+  font-size: 22px;
+}
+
+.zeleri-verificacion-plugin li a {
+  border: 1px solid green;
+  padding: 5px;
+  border-radius: 5px;
+  background: #d5f5e3;
+  color: black;
+  text-decoration: none;
+}
+/*Final home plugin*/
+
+/*Inicio Textarea Formulario Configuracion*/
+.woocommerce table.form-table textarea.wide-input {
+  width: 0% !important;
+  min-width: 400px !important;
+  border: 1px solid #757575 !important;
+}
+/*Final Textarea Formulario Configuracion*/
+
+/* Inicio seccion de pagos en la pagian de configuracion de woocommerce */
+tr[data-gateway_id="zeleri_pay_payment_gateways"]
+  .name
+  .wc-payment-gateway-method-name {
+  display: none;
+}
+
+tr[data-gateway_id="zeleri_pay_payment_gateways_tb"]
+  .name
+  .wc-payment-gateway-method-name {
+  display: none;
+}
+/* Final seccion de pagos en la pagian de configuracion de woocommerce */
